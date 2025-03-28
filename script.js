@@ -13,6 +13,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function loadContent(section) {
   const contentDiv = document.getElementById('content');
-  contentDiv.innerHTML = `<h2>${section.charAt(0).toUpperCase() + section.slice(1)}</h2>`;
-  // Add content loading logic here
+  const imageMap = {
+    'sakuma': 'attached_assets/sakumlapa.png',
+    'parmums': 'attached_assets/par mums.png',
+    'piedavajums': 'attached_assets/piedāvājums.png',
+    'galerija': 'attached_assets/Galerija.png',
+    'kontakti': 'attached_assets/kontakti.png',
+    'sudzibas': 'attached_assets/Sūdzība.png',
+    'autorizacija': 'attached_assets/autorizācija.png'
+  };
+
+  if (imageMap[section]) {
+    contentDiv.innerHTML = `<img src="${imageMap[section]}" alt="${section}" style="max-width: 100%; height: auto;">`;
+  }
 }
