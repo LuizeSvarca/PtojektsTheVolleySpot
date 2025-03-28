@@ -1,4 +1,11 @@
 html {
-  height: 100%;
+  height:100%;
   width: 100%;
+}
+
+body{
+background-color: #e97d22}
+#logo{
+  width:50%;
+  height:50%;
 }
