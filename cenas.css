@@ -1,4 +1,5 @@
 
+
 html, body {
   height: 100%;
   width: 100%;
@@ -11,6 +12,6 @@ body {
   background-color: #e97d22;
 }
 .logo{
-  margin-left: 650px;
-  
+  margin-left: 100px;
+
 }
